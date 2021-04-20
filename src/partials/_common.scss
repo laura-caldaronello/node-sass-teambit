@@ -1,0 +1,35 @@
+// classi preliminari
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// /classi preliminari
+
+// elementi generici
+
+// tipi di bottoni
+// color: white or blue
+@each $color in color-1, color-4 {
+    .button-#{$color} {
+        background-color: map-get($colors,#{$color});
+        @if (#{$color} == 'color-1') {
+            color: map-get($colors,'color-4');
+        }
+        @else {
+            color: map-get($colors,'color-1');
+        }
+        border: 1px solid map-get($colors,'color-4');
+    }
+}
+// /color
+// size: big or small
+@each $name, $size in $size-button-padding {
+    .button-#{$name} {
+        padding: $size * 1px;
+    }
+}
+// /size
+// /tipi di bottoni
+
+// /elementi generici

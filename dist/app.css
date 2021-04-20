@@ -1,1 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.button-color-1 {
+  background-color: white;
+  color: #2c4792;
+  border: 1px solid #2c4792;
+}
+
+.button-color-4 {
+  background-color: #2c4792;
+  color: white;
+  border: 1px solid #2c4792;
+}
+
+.button-big {
+  padding: 10px;
+}
+
+.button-small {
+  padding: 5px;
+}
