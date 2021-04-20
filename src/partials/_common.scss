@@ -4,11 +4,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
 // /classi preliminari
 
 // elementi generici
 
 // tipi di bottoni
+// tutti
+button {
+    img {
+        height: 20px;
+        vertical-align: middle;
+    }
+}
+// /tutti
 // color: white or blue
 @each $color in color-1, color-4 {
     .button-#{$color} {
@@ -20,6 +38,7 @@
             color: map-get($colors,'color-1');
         }
         border: 1px solid map-get($colors,'color-4');
+        border-radius: 5px;
     }
 }
 // /color
@@ -31,5 +50,26 @@
 }
 // /size
 // /tipi di bottoni
+
+// liste
+ul {
+    list-style: none;
+    &.horizontal {
+        li {
+            display: inline-block;
+        }
+    }
+    li {
+        a,
+        button {
+            text-transform: capitalize;
+            font-size: 0.8em;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+// /liste
 
 // /elementi generici
