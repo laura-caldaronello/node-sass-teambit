@@ -7,6 +7,7 @@
 body {
   width: 100%;
   font-family: "Roboto", sans-serif;
+  color: #58402c;
 }
 
 .wrapper {
@@ -56,16 +57,55 @@ ul li a {
   text-decoration: none;
 }
 
-header {
+.background-color-1 {
   background-color: white;
 }
-header > div {
+.background-color-1 .wrapper {
+  display: flex;
+}
+.background-color-1 .wrapper > div {
+  width: 50%;
+}
+.background-color-1 .wrapper > div > img {
+  width: 100%;
+}
+
+.background-color-2 {
+  background-color: #ffe7d2;
+}
+.background-color-2 .wrapper {
+  text-align: center;
+}
+
+#section-2 .imgs-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#section-2 .imgs-block div {
+  text-align: center;
+}
+#section-2 .imgs-block div img {
   height: 80px;
+}
+#section-2 .imgs-block div:last-child {
+  width: 100%;
+}
+#section-2 .imgs-block div:last-child img {
+  height: 200px;
+}
+
+header {
+  height: 80px;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  margin-bottom: 80px;
+  background-color: white;
+}
+header > div {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,4 +116,8 @@ header > div li {
 }
 header > div a {
   color: #58402c;
+}
+
+main {
+  margin-top: 80px;
 }

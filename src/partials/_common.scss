@@ -8,6 +8,7 @@
 body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    color: map-get($colors,'color-3');
 }
 
 .wrapper {
@@ -71,5 +72,51 @@ ul {
     }
 }
 // /liste
+
+// sfondi
+@each $color in color-1, color-2 {
+    .background-#{$color} {
+        background-color: map-get($colors,$color);
+        @if (#{$color} == 'color-1') {
+            .wrapper {
+                display: flex;
+                & > div {
+                    width: 50%;
+                    & > img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        @else {
+            .wrapper {
+                text-align: center;
+            }
+        }
+    }
+}
+// /sfondi
+
+// blocco immagini section 2
+#section-2 {
+    .imgs-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            text-align: center;
+            img {
+                height: 80px;
+            }
+        }
+        div:last-child {
+            width: 100%;
+            img {
+                height: 200px;
+            }
+        }
+    }
+}
+// /blocco immagini section 2
 
 // /elementi generici
