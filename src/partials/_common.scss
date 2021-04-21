@@ -22,6 +22,7 @@ body {
 // tipi di bottoni
 // tutti
 button {
+    text-transform: capitalize;
     img {
         height: 20px;
         vertical-align: middle;
@@ -92,8 +93,19 @@ ul {
     & > * {
         display: inline-block;
         vertical-align: middle;
+        padding-right: 10px;
     }
 }
 // /elemento inline
+
+h1 {
+    line-height: 1.5em;
+    font-size: 2em;
+}
+
+hr {
+    border: 1px solid map-get($colors,'color-3');
+    margin: 50px auto;
+}
 
 // /elementi generici

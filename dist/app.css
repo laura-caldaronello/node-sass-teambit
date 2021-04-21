@@ -15,6 +15,9 @@ body {
   margin: 0 auto;
 }
 
+button {
+  text-transform: capitalize;
+}
 button img {
   height: 20px;
   vertical-align: middle;
@@ -72,6 +75,17 @@ ul.horizontal li {
 .inline > * {
   display: inline-block;
   vertical-align: middle;
+  padding-right: 10px;
+}
+
+h1 {
+  line-height: 1.5em;
+  font-size: 2em;
+}
+
+hr {
+  border: 1px solid #58402c;
+  margin: 50px auto;
 }
 
 header {
@@ -81,6 +95,7 @@ header {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
   background-color: white;
 }
 header > div {
@@ -98,6 +113,7 @@ header > div li button {
   font-weight: bold;
   font-size: 0.8em;
   text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
 }
 header > div li a {
   color: #58402c;
@@ -106,6 +122,33 @@ header > div li a {
 
 main {
   margin-top: 80px;
+}
+main section {
+  padding: 20px 0;
+}
+main section *:not(:empty):not(button):not(li):not(.cit):not(.special),
+main section *:not(button) > img {
+  padding: 10px 0;
+  vertical-align: middle;
+}
+main section .cit {
+  padding: 10px;
+}
+main section .cit h6 {
+  padding: 0;
+}
+main section .cit h6 a {
+  padding: 0;
+}
+main a {
+  text-decoration: none;
+}
+main *:not(h6) > a {
+  color: #2c4792;
+  text-transform: capitalize;
+}
+main h6 a {
+  color: #58402c;
 }
 
 #section-2 .imgs-block {
@@ -137,13 +180,29 @@ main {
 }
 
 #section-4 .cit {
-  width: 50%;
-  margin: 0 auto;
+  position: relative;
+  width: 70%;
+  margin: 30px auto;
   text-align: left;
   color: #58402c;
 }
 #section-4 .cit p {
   font-size: 13px;
+}
+#section-4 .cit i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  color: #2c4792;
+}
+#section-4 .cit a {
+  color: #2c4792;
+  text-decoration: none;
+}
+#section-4 .cit img {
+  height: 60px;
 }
 
 footer .wrapper {
@@ -156,8 +215,40 @@ footer .wrapper button {
   font-weight: bold;
   font-size: 0.8em;
   text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
 }
 footer .wrapper a {
   color: #58402c;
   text-decoration: none;
+}
+footer .wrapper *:not(:empty):not(button):not(li):not(.cit):not(.special),
+footer .wrapper *:not(button) > img {
+  padding: 10px 0;
+  vertical-align: middle;
+}
+footer .wrapper .cit {
+  padding: 10px;
+}
+footer .wrapper .cit h6 {
+  padding: 0;
+}
+footer .wrapper .cit h6 a {
+  padding: 0;
+}
+footer .wrapper > div:first-child {
+  flex-basis: 30%;
+  display: flex;
+}
+footer .wrapper > div:first-child img {
+  height: 50px;
+  margin-right: 10px;
+}
+footer .wrapper > div:last-child {
+  flex-basis: 20%;
+}
+footer .wrapper h4 {
+  text-transform: capitalize;
+}
+footer .wrapper h5 a {
+  color: #2c4792;
 }

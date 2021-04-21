@@ -1,5 +1,21 @@
 main {
     margin-top: 80px;
+    section {
+        padding: 20px 0;
+        @include paddings;
+    }
+    a {
+        text-decoration: none;
+    }
+    *:not(h6) > a {
+        color: map-get($colors,'color-4');
+        text-transform: capitalize;
+    }
+    h6 {
+        a {
+            color: map-get($colors,'color-3');
+        }
+    }
 }
 
 // blocchi section 3
@@ -43,12 +59,28 @@ main {
 // section 4
 #section-4 {
     .cit {
-        width: 50%;
-        margin: 0 auto;
+        position: relative;
+        width: 70%;
+        margin: 30px auto;
         text-align: left;
         color: map-get($colors,'color-3');
         p {
             font-size: 13px;
+        }
+        i {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+            color: map-get($colors,'color-4');
+        }
+        a {
+            color: map-get($colors,'color-4');
+            text-decoration: none;
+        }
+        img {
+            height: 60px;
         }
     }
 }
