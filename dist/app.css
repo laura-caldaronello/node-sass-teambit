@@ -104,6 +104,9 @@ header {
   z-index: 1;
   background-color: white;
 }
+header .wrapper {
+  min-width: 450px;
+}
 header > div {
   height: 100%;
   display: flex;
