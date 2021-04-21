@@ -9,7 +9,7 @@ body {
   width: 100%;
   min-width: 450px;
   font-family: "Roboto", sans-serif;
-  color: #58402c;
+  color: #0E14EE;
 }
 
 .wrapper {
@@ -31,15 +31,15 @@ button img {
 
 .button-color-1 {
   background-color: white;
-  color: #2c4792;
-  border: 1px solid #2c4792;
+  color: #7F14D4;
+  border: 1px solid #7F14D4;
   border-radius: 5px;
 }
 
 .button-color-4 {
-  background-color: #2c4792;
+  background-color: #7F14D4;
   color: white;
-  border: 1px solid #2c4792;
+  border: 1px solid #7F14D4;
   border-radius: 5px;
 }
 
@@ -73,7 +73,7 @@ ul.horizontal li {
 }
 
 .background-color-2 {
-  background-color: #ffe7d2;
+  background-color: #0414B3;
 }
 .background-color-2 .wrapper {
   text-align: center;
@@ -91,7 +91,7 @@ h1 {
 }
 
 hr {
-  border: 1px solid #58402c;
+  border: 1px solid #0E14EE;
   margin: 50px auto;
 }
 
@@ -115,7 +115,7 @@ header > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #58402c;
+  border-bottom: 1px solid #0E14EE;
 }
 header > div li {
   margin-left: 10px;
@@ -128,7 +128,7 @@ header > div li button {
   font-family: "Roboto", sans-serif;
 }
 header > div li a {
-  color: #58402c;
+  color: #0E14EE;
   text-decoration: none;
 }
 
@@ -158,11 +158,11 @@ main a {
   text-decoration: none;
 }
 main *:not(h6) > a {
-  color: #2c4792;
+  color: #7F14D4;
   text-transform: capitalize;
 }
 main h6 a {
-  color: #58402c;
+  color: #0E14EE;
 }
 
 #section-2 .imgs-block {
@@ -198,7 +198,7 @@ main h6 a {
   width: 70%;
   margin: 30px auto;
   text-align: left;
-  color: #58402c;
+  color: #0E14EE;
 }
 #section-4 .cit p {
   font-size: 13px;
@@ -209,10 +209,10 @@ main h6 a {
   left: 0;
   transform: translateY(-50%);
   font-size: 1.5em;
-  color: #2c4792;
+  color: #7F14D4;
 }
 #section-4 .cit a {
-  color: #2c4792;
+  color: #7F14D4;
   text-decoration: none;
 }
 #section-4 .cit img {
@@ -234,7 +234,7 @@ footer .wrapper button {
   font-family: "Roboto", sans-serif;
 }
 footer .wrapper a {
-  color: #58402c;
+  color: #0E14EE;
   text-decoration: none;
 }
 footer .wrapper *:not(:empty):not(button):not(li):not(.cit):not(.special),
@@ -267,7 +267,7 @@ footer .wrapper h4 {
   text-transform: capitalize;
 }
 footer .wrapper h5 a {
-  color: #2c4792;
+  color: #7F14D4;
 }
 
 /* /footer */
