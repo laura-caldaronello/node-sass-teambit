@@ -1,18 +1,27 @@
 @media (max-width: 900px) {
     .expand {
         width: 100% !important;
+        flex-basis: 100% !important;
         text-align: center;
         margin: 0 auto;
-    }
-    #section-3 {
-        & > .block {
-            flex-direction: column-reverse !important;
-        }
     }
     .visible {
         display: none;
     }
     .invisible {
         display: block;
+    }
+    #section-3 {
+        & > .block {
+            flex-direction: column-reverse !important;
+        }
+    }
+    footer {
+        .wrapper {
+            justify-content: left;
+        }
+        .expand-less {
+            width: calc(100% / 3);
+        }
     }
 }
