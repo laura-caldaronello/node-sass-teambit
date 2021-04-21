@@ -60,25 +60,15 @@ ul {
             display: inline-block;
         }
     }
-    li {
-        a,
-        button {
-            text-transform: capitalize;
-            font-size: 0.8em;
-        }
-        a {
-            text-decoration: none;
-        }
-    }
 }
 // /liste
 
-// sfondi
+// sfondi e relative caratteristiche
 @each $color in color-1, color-2 {
     .background-#{$color} {
         background-color: map-get($colors,$color);
         @if (#{$color} == 'color-1') {
-            .wrapper {
+            .block {
                 display: flex;
                 & > div {
                     width: 50%;
@@ -95,28 +85,15 @@ ul {
         }
     }
 }
-// /sfondi
+// /sfondi e relative caratteristiche
 
-// blocco immagini section 2
-#section-2 {
-    .imgs-block {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        div {
-            text-align: center;
-            img {
-                height: 80px;
-            }
-        }
-        div:last-child {
-            width: 100%;
-            img {
-                height: 200px;
-            }
-        }
+// elemento inline
+.inline {
+    & > * {
+        display: inline-block;
+        vertical-align: middle;
     }
 }
-// /blocco immagini section 2
+// /elemento inline
 
 // /elementi generici

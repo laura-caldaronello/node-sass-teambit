@@ -1,0 +1,12 @@
+@mixin links {
+    a,
+    button {
+        font-weight: bold;
+        font-size: 0.8em;
+        text-transform: capitalize;
+    }
+    a {
+        color: map-get($colors,'color-3');
+        text-decoration: none;
+    }
+}

@@ -14,9 +14,7 @@ header {
         border-bottom: 1px solid map-get($colors,'color-3');
         li {
             margin-left: 10px;
-        }
-        a {
-            color: map-get($colors,'color-3');
-        }
+            @include links;
+        }    
     }
 }

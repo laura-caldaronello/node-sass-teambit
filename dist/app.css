@@ -48,25 +48,17 @@ ul {
 ul.horizontal li {
   display: inline-block;
 }
-ul li a,
-ul li button {
-  text-transform: capitalize;
-  font-size: 0.8em;
-}
-ul li a {
-  text-decoration: none;
-}
 
 .background-color-1 {
   background-color: white;
 }
-.background-color-1 .wrapper {
+.background-color-1 .block {
   display: flex;
 }
-.background-color-1 .wrapper > div {
+.background-color-1 .block > div {
   width: 50%;
 }
-.background-color-1 .wrapper > div > img {
+.background-color-1 .block > div > img {
   width: 100%;
 }
 
@@ -77,22 +69,9 @@ ul li a {
   text-align: center;
 }
 
-#section-2 .imgs-block {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-#section-2 .imgs-block div {
-  text-align: center;
-}
-#section-2 .imgs-block div img {
-  height: 80px;
-}
-#section-2 .imgs-block div:last-child {
-  width: 100%;
-}
-#section-2 .imgs-block div:last-child img {
-  height: 200px;
+.inline > * {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 header {
@@ -114,10 +93,71 @@ header > div {
 header > div li {
   margin-left: 10px;
 }
-header > div a {
+header > div li a,
+header > div li button {
+  font-weight: bold;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+header > div li a {
   color: #58402c;
+  text-decoration: none;
 }
 
 main {
   margin-top: 80px;
+}
+
+#section-2 .imgs-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#section-2 .imgs-block div {
+  text-align: center;
+}
+#section-2 .imgs-block div img {
+  height: 80px;
+}
+#section-2 .imgs-block div:last-child {
+  width: 100%;
+}
+#section-2 .imgs-block div:last-child img {
+  height: 200px;
+}
+
+#section-3 .block:nth-child(2n+0) .block {
+  flex-direction: row-reverse;
+}
+#section-3 .block:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+#section-3 .block:nth-child(2n+1) .block {
+  flex-direction: row;
+}
+
+#section-4 .cit {
+  width: 50%;
+  margin: 0 auto;
+  text-align: left;
+  color: #58402c;
+}
+#section-4 .cit p {
+  font-size: 13px;
+}
+
+footer .wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+footer .wrapper a,
+footer .wrapper button {
+  font-weight: bold;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+footer .wrapper a {
+  color: #58402c;
+  text-decoration: none;
 }

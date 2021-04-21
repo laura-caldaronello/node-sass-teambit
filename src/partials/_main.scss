@@ -1,3 +1,55 @@
 main {
     margin-top: 80px;
 }
+
+// blocchi section 3
+#section-2 {
+    .imgs-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        div {
+            text-align: center;
+            img {
+                height: 80px;
+            }
+        }
+        div:last-child {
+            width: 100%;
+            img {
+                height: 200px;
+            }
+        }
+    }
+}
+// /blocco immagini section 2
+
+// blocchi section 3
+#section-3 {
+    .block:nth-child(2n + 0) {
+        .block {
+            flex-direction: row-reverse;
+        }
+    }
+    .block:nth-child(2n + 1) {
+        flex-direction: row-reverse;
+        .block {
+            flex-direction: row;
+        }
+    }
+}
+// /blocchi section 3
+
+// section 4
+#section-4 {
+    .cit {
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+        color: map-get($colors,'color-3');
+        p {
+            font-size: 13px;
+        }
+    }
+}
+// /section 4
