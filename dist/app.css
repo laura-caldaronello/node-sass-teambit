@@ -6,6 +6,7 @@
 
 body {
   width: 100%;
+  min-width: 450px;
   font-family: "Roboto", sans-serif;
   color: #58402c;
 }
@@ -13,6 +14,10 @@ body {
 .wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+.invisible {
+  display: none;
 }
 
 button {
@@ -57,6 +62,7 @@ ul.horizontal li {
 }
 .background-color-1 .block {
   display: flex;
+  flex-wrap: wrap;
 }
 .background-color-1 .block > div {
   width: 50%;
@@ -207,7 +213,7 @@ main h6 a {
 
 footer .wrapper {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 footer .wrapper a,
@@ -251,4 +257,24 @@ footer .wrapper h4 {
 }
 footer .wrapper h5 a {
   color: #2c4792;
+}
+
+@media (max-width: 900px) {
+  .expand {
+    width: 100% !important;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #section-3 > .block {
+    flex-direction: column-reverse !important;
+  }
+
+  .visible {
+    display: none;
+  }
+
+  .invisible {
+    display: block;
+  }
 }

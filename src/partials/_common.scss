@@ -7,6 +7,7 @@
 
 body {
     width: 100%;
+    min-width: 450px;
     font-family: 'Roboto', sans-serif;
     color: map-get($colors,'color-3');
 }
@@ -14,6 +15,10 @@ body {
 .wrapper {
     width: 80%;
     margin: 0 auto;
+}
+
+.invisible {
+    display: none;
 }
 // /classi preliminari
 
@@ -71,6 +76,7 @@ ul {
         @if (#{$color} == 'color-1') {
             .block {
                 display: flex;
+                flex-wrap: wrap;
                 & > div {
                     width: 50%;
                     & > img {
